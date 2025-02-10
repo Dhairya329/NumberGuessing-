@@ -1,8 +1,4 @@
-/*
-Take input from the user (a number between 1 to 100)
-the user has to guess the no. between 1 to 100 (number which is known by the system)
-print how many attempts the user took
-*/
+
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
@@ -16,11 +12,22 @@ int generatenum()
 
 int main()
 {
-    int number; int i ;int  attempts =1 ; 
+    int number; 
+    int  attempts =1 ; 
     printf("Guess a number between (1 to 100)\n");
     scanf("%d", &number);
 
     int n = generatenum();
+
+    for (int i=0; i<1; i++)
+    {
+        if(number > 100)
+        {
+            printf("Please enter a number between 1 to 100\n");
+            scanf("%d", &number);
+            break;
+        }
+    }
 
     label:
 
