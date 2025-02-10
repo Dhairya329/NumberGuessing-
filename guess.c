@@ -34,7 +34,7 @@ int main()
     if(n == number)
     {
 
-        printf("You guessed it right in %d attempts\n", attempts);
+        printf("Congratulations! You guessed it right in %d attempts\n", attempts);
         printf("Thanks for playing\n");
         printf( "Made by Dhairya Gupta\n");
         goto end;
